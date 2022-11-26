@@ -1,0 +1,36 @@
+{
+  "name": "reto-programacion-orientada-a-objetos-ivangodinez21",
+  "version": "1.0.0",
+  "description": "reto-programacion-orientada-a-objetos-IvanGodinez21 created by GitHub Classroom",
+  "main": "./build/index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "npx tsc",
+    "dev": "npx nodemon ./build/index.js",
+    "start": "node ./build/index.js",
+    "test": "npm run build && npm start 1234567890 3 2",
+    "test:dev": "npm start 1234567890 3 2",
+    "watch": "npx tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BCMAY21-Candidates/reto-programacion-orientada-a-objetos-IvanGodinez21.git"
+  },
+  "author": {
+    "name": "Jesús Iván Godínez Martínez",
+    "email": "ivano.godinez@gmail.com",
+    "url": "https://github.com/IvanGodinez21"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BCMAY21-Candidates/reto-programacion-orientada-a-objetos-IvanGodinez21/issues"
+  },
+  "homepage": "https://github.com/BCMAY21-Candidates/reto-programacion-orientada-a-objetos-IvanGodinez21#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.8.4"
+  }
+}

@@ -1,0 +1,40 @@
+{
+    "version": "0.2.0",
+    "compounds": [
+        {
+            "name": "Debug",
+            "configurations": [
+                "Launch",
+            ],
+        },
+        {
+            "name": "Build & Debug",
+            "configurations": [
+                "Launch",
+            ],
+            "preLaunchTask": "Build"
+        },
+        {
+            "name": "Install, Build & Debug",
+            "configurations": [
+                "Launch",
+            ],
+            "preLaunchTask": "Install & Build"
+        }
+    ],
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch",
+            "cwd": "${workspaceRoot}",
+            "runtimeExecutable": "npm",
+            "program": "${workspaceFolder}/src/index.ts",
+            "outFiles": ["${workspaceFolder}/build/**/*.js"],
+            "runtimeArgs": [
+                "run",
+                "test:dev"
+            ],
+        }
+    ]
+}
